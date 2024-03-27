@@ -34,7 +34,11 @@ const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
     gap: 30px;
-    //justify-content: center;
+    justify-content: center;
+  }
+  //на всех девайсах < 768 будем скрывать
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `
 
