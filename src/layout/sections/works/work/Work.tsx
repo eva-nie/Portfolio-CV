@@ -95,7 +95,6 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 260px;
-  width: 540px;
   object-fit: cover;
 
   @media ${theme.media.mobile} {
