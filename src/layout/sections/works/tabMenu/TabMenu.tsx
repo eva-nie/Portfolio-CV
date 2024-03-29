@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "components/Link"
+import { theme } from "styles/Theme"
 
 // type MenuPropsType = {
 //     menuItems: Array<string>
@@ -23,12 +24,19 @@ export const TabMenu = (props: { menuItems: string[] }) => {
 }
 
 const StyledTabMenu = styled.nav`
-  margin-bottom: 40px;
-
   ul {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    //gap: 20px;
+    justify-content: space-between;
+    //  эта связочка из двух строк дает нам эффект резиновости, менб не будет становиться больше родителя:
+    max-width: 352px;
+    width: 100%;
+    border: 1px solid red;
+    //  align in center and margin bottom:
+    margin: 0 auto 40px;
+  }
+  & ${Link} {
+    color: ${theme.colors.font};
   }
 `
 

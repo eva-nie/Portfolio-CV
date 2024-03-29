@@ -3,8 +3,8 @@ import styled from "styled-components"
 import { SectionTitle } from "components/SectionTitle"
 import { FlexWrapper } from "components/FlexWrapper"
 import { Work } from "layout/sections/works/work/Work"
-import socialImg from "./../../../assets/images/social-network.png"
-import timerImg from "./../../../assets/images/new-york.png"
+import socialImg from "./../../../assets/images/work1jpg.jpg"
+import timerImg from "./../../../assets/images/work2.jpg"
 import { Container } from "components/Container"
 import { TabMenu } from "layout/sections/works/tabMenu/TabMenu"
 
@@ -33,4 +33,8 @@ export const Works = () => {
   )
 }
 
-const StyledWorks = styled.section``
+const StyledWorks = styled.section`
+  ${FlexWrapper} {
+    gap: 30px;
+  }
+`

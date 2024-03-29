@@ -5,17 +5,20 @@ import { Icon } from "components/icon/Icon"
 import { Slider } from "components/slider/Slider"
 import { FlexWrapper } from "components/FlexWrapper"
 import { IconWrapper } from "layout/sections/skills/skill/Skill"
+import { Container } from "components/Container"
 
 export const Testimonials = () => {
   return (
     <StyledTestimonials>
-      <SectionTitle>Testimonials</SectionTitle>
-      <FlexWrapper direction="column" align="center">
-        <IconWrapper>
-          <Icon iconId="quote" />
-        </IconWrapper>
-        <Slider />
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Testimonials</SectionTitle>
+        <FlexWrapper direction="column" align="center">
+          <IconWrapper>
+            <Icon iconId="quote" />
+          </IconWrapper>
+          <Slider />
+        </FlexWrapper>
+      </Container>
     </StyledTestimonials>
   )
 }
