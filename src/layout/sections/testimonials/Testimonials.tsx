@@ -24,6 +24,7 @@ export const Testimonials: React.FC = () => {
 }
 
 const StyledTestimonials = styled.section`
+  position: relative;
   min-height: 50vh;
   background-color: #72a3d2;
 
