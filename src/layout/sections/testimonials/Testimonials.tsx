@@ -9,7 +9,7 @@ import { S } from "layout/sections/skills/Skills_Styles"
 
 export const Testimonials: React.FC = () => {
   return (
-    <StyledTestimonials>
+    <StyledTestimonials id={"testimonials"}>
       <Container>
         <SectionTitle>Testimonials</SectionTitle>
         <FlexWrapper direction="column" align="center">

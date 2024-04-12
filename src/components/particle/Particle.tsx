@@ -60,7 +60,7 @@ export const Particle = () => {
 
           move: {
             enable: true,
-            speed: 6,
+            speed: 1,
             direction: "none",
             random: false,
             straight: false,
@@ -98,7 +98,7 @@ export const Particle = () => {
               size: 40,
               duration: 2,
               opacity: 8,
-              speed: 3,
+              speed: 0.1,
             },
             repulse: {
               distance: 200,
