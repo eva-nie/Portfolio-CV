@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import { SectionTitle } from "components/SectionTitle"
 import { FlexWrapper } from "components/FlexWrapper"
 import { Work } from "layout/sections/works/work/Work"
-import socialImg from "./../../../assets/images/work1jpg.jpg"
-import timerImg from "./../../../assets/images/work2.jpg"
+import socialImg from "./../../../assets/images/social-network.webp"
+import timerImg from "./../../../assets/images/work3.jpeg"
 import { Container } from "components/Container"
 import { TabMenu, TabsStatusType } from "layout/sections/works/tabMenu/TabMenu"
 import { S } from "./Works_Styles"
@@ -58,7 +58,8 @@ export const Works: React.FC = () => {
     filteredWorks = worksData.filter((w) => w.type === "spa")
   }
 
-  const changeFilterStatus = (value: TabsStatusType) => setCurrentFilterStatus(value)
+  const changeFilterStatus = (value: TabsStatusType) =>
+    setCurrentFilterStatus(value)
 
   return (
     <S.Works id={"works"}>
@@ -71,7 +72,9 @@ export const Works: React.FC = () => {
         />
         <FlexWrapper justify="space-between" align="flex-start" wrap="wrap">
           {filteredWorks.map((w, index) => {
-            return <Work key={index} title={w.title} text={w.text} src={w.src} />
+            return (
+              <Work key={index} title={w.title} text={w.text} src={w.src} />
+            )
           })}
         </FlexWrapper>
       </Container>
